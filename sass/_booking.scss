@@ -1,0 +1,10 @@
+#booking {
+	width: 100%;
+	.rwmb-meta-box {
+		width: 100%;
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-gap: 15px;
+	}
+}

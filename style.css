@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*
+Theme Name: eStar Child Theme
+Theme URI: https://gretathemes.com/wordpress-themes/estar/
+Version: 1.0
+Description: An example child theme that can be used as a starting point for custom development.
+Author: GretaThemes
+Author URI: https://gretathemes.com
+template: estar
+*/
+.header {
+  position: relative; }
+  .header:before {
+    content: "";
+    height: 1px;
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 28px;
+    z-index: 1; }
+  .header .logo .fl-col-content {
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: 99 !important; }
+  .header .fl-photo-content img {
+    border-radius: 0px 0px 8px 8px;
+    z-index: 99 !important; }
+  .header form {
+    position: relative; }
+    .header form:before {
+      content: "\f002";
+      display: inline-block;
+      position: absolute;
+      top: 2px;
+      font-size: 12px;
+      left: 7px;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold; }
+  .header input[type=search] {
+    height: 28px;
+    width: 166px;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 16px;
+    width: 166px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 24px; }
+  .header .txt-topbar p {
+    margin-bottom: 0; }
+  .header .phone .fl-module-content {
+    height: 28px; }
+  .header ul#menu-main-menu a {
+    letter-spacing: 0.03em; }
+  .header .sub-menu li {
+    text-transform: initial;
+    border-top: 1px solid #60a563 !important;
+    font-weight: normal; }
+    .header .sub-menu li a {
+      font-size: 14px; }
+
+/* Dành cho tablet */
+@media all and (max-width: 800px) {
+  .header .fl-photo-content img {
+    height: 56px;
+    width: 174px; }
+  .fl-node-5dd39624944e8 .fl-photo-content {
+    width: auto; }
+  .logo .fl-col-content {
+    top: 28px !important;
+    left: 20px !important; }
+  .header form {
+    float: right; }
+  button.fl-menu-mobile-toggle.hamburger {
+    margin-right: 20px;
+    background-color: #165219; } }
+
+/* Dành cho điện thoại */
+@media all and (max-width: 500px) {
+  #myheader.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99 !important; }
+  .sub-menu li a {
+    background-color: #0b400e; }
+  .header .fl-photo-content img {
+    height: auto;
+    width: 120px; } }
+
+#booking {
+  width: 100%; }
+#booking .rwmb-meta-box {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 15px; }
