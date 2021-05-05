@@ -18,7 +18,7 @@
 					phong: phong
 				},
 				success: function(response) {
-					$('.tong_tien .rwmb-input').html(response.tong_tien);
+					$('#tong_tien').val(response.tong_tien);
 				},
 				error: function( jqXHR, textStatus, errorThrown ){
 					console.log( 'The following error occured: ' + textStatus, errorThrown );
