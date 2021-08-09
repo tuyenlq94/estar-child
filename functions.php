@@ -12,7 +12,7 @@ if (!function_exists('currency_format')) {
         }
     }
 }
-
+ 
 // Ajax load total price
 add_action( 'wp_ajax_total', 'text_domain_load_total_ajax' );
 add_action( 'wp_ajax_nopriv_total', 'text_domain_load_total_ajax' );

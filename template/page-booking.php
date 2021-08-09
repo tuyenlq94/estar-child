@@ -12,6 +12,6 @@ if( have_posts() ) :
            <div id="total1"></div>
         </main>
         <?php
-    endwhile;
+    endwhile; 
 endif;
 get_footer();
